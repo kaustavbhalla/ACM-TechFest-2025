@@ -5,6 +5,9 @@ import Button from "./button";
 import { BackgroundCircles, BottomLine, Gradient } from './design/Hero';
 import { heroIcons } from '../constants';
 import { ScrollParallax } from 'react-just-parallax';
+import Floating1 from './floating1';
+import Notification from './Notification';
+import Sponsors from './sponsors';
 
 const Hero = () => {
     const parallaxRef = useRef(null);
@@ -43,6 +46,7 @@ const Hero = () => {
                             <div className='h-[1.4rem] bg-n-10 rounded-t-[0.9rem]' />
                             <div className='aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]'>
                                 <img src={robot} className='w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]' width={1024} height={490} alt='robot' />
+                                <Floating1 className='absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2'/>
                                 <ScrollParallax isAbsolutelyPositioned>
                                     <ul className='hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex'>
                                         {heroIcons.map((icon, index) => (
@@ -51,6 +55,10 @@ const Hero = () => {
                                             </li>
                                         ))}
                                     </ul>
+                                </ScrollParallax>
+
+                                <ScrollParallax isAbsolutelyPositioned>
+                                        <Notification className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex" title="200+ registrations! Don't miss your spot!" />
                                 </ScrollParallax>
                             </div>
                         </div>
@@ -61,6 +69,8 @@ const Hero = () => {
                     </div>
                     <BackgroundCircles parallaxRef={parallaxRef} />
                 </div>
+
+                <Sponsors className='hidden relative z-10 mt-20 lg:block'/>
                 <BottomLine />
             </div>
         </Section>
