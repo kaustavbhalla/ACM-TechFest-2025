@@ -34,6 +34,12 @@ import {
   telegram,
   twitter,
   yourlogo,
+  card1,
+  card2,
+  card3,
+  card4,
+  card5,
+  card6,
 } from "../assets";
 
 
@@ -101,4 +107,58 @@ export const brainwaveServicesIcons = [
   disc02,
   chromecast,
   sliders04,
+];
+
+
+export const flagship = [
+  {
+    id: "0",
+    title: "HackerSpace 1.0: Capture the Flag",
+    text: "HackerSpace is BrainWave's flagship CTF event focused on cybersecurity and bug bounty hunting!",
+    backgroundUrl: card1,
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "1",
+    title: "HackLLM",
+    text: "If you're interested in LLM's, HackLLM is the space for you. 24 hours non-stop LLM Hackathon",
+    backgroundUrl: card2,
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "2",
+    title: "CompetitiveCoder",
+    text: "Looking for a place to improve your DSA skills and compete on a large scale, the CompetitiveCoder is for you. A CP competition where the winner, takes all",
+    backgroundUrl: card3,
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "3",
+    title: "CVHack",
+    text: "Create computer vision solutions within 24 Hours.",
+    backgroundUrl: card4,
+    iconUrl: benefitIcon4,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "CozmoClench",
+    text: "A robotics competition where teams build manually controlled robots to grip, carry and deposit objects, while navigating ramps, pits, bridges and control-specific zones",
+    backgroundUrl: card5,
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "5",
+    title: "MeshMerize",
+    text: "MeshMerize is a line following maze-solving robotics competion where teams build autonomous bots that track directions, map the maze in a dry run, and then traverse it via the shortest path in the actual run",
+    backgroundUrl: card6,
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+  },
 ];

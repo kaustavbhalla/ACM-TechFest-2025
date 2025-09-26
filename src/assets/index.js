@@ -75,7 +75,20 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import card1 from "./benefits/card-1.svg?url";
+import card2 from "./benefits/card-2.svg?url";
+import card3 from "./benefits/card-3.svg?url";
+import card4 from "./benefits/card-4.svg?url";
+import card5 from "./benefits/card-5.svg?url";
+import card6 from "./benefits/card-6.svg?url";
+
 export {
+  card1,
+  card2,
+  card3,
+  card4,
+  card5,
+  card6,
   brainwave,
   check,
   check2,
