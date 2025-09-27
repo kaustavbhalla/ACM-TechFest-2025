@@ -7,6 +7,8 @@ import MenuSvg from '../assets/svg/Menusvg';
 import { HamburgerMenu } from './design/Header';
 import ButtonGradient from '../assets/svg/ButtonGradient';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+import Login from './login'
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const pathName = useLocation();
@@ -28,6 +30,8 @@ const Header = () => {
         enablePageScroll();
         setopenNav(false);
     };
+
+    const navigate = useNavigate();
 
     return (
         <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNav ? 'bg-n-8': 'bg-n-8/90 backdrop-blur-sm'}`}>
@@ -56,12 +60,12 @@ const Header = () => {
                     Sign Up
                 </a>
 
-                <Button className='hidden lg:flex' href="#signIn">
+                <Button className='hidden lg:flex' onClick={() => navigate("/login")}>
                     Sign In
                 </Button>
 
-                <Button 
-                    className='ml-auto lg:hidden' px = 'px-3' 
+                <Button
+                    className='ml-auto lg:hidden' px='px-3'
                     onClick={toggleNav}
                 >
                     <MenuSvg openNavigation={openNav} />

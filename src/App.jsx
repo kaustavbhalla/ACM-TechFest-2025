@@ -4,19 +4,33 @@ import Hero from './components/Hero';
 import Flagships from './components/Flagships';
 import Benefits from './components/Benefits';
 import Login from './components/login';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <div className='pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden bg-n-8 min-h-screen'>
+    <Router>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden bg-n-8 min-h-screen">
         <Header />
-        <Hero />
-        <Flagships />
-        <Benefits />
-        {/* <Login /> */}
-      </div>
-    </>
-  )
-}
 
-export default App
+        <Routes>
+          {/* Homepage */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Flagships />
+                <Benefits />
+              </>
+            }
+          />
+
+          {/* Login Page */}
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
+
+export default App;

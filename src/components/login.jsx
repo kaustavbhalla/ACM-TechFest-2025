@@ -1,35 +1,50 @@
 import React from 'react'
-import { BackgroundCircles, BottomLine, Gradient } from './design/Hero';
 import Section from './section';
-import Header from './header';
 import Button from './button';
+import { saveUser } from "C:/Users/kaust/USICT/acmChallenge/utils/saveUser.js";
+import { useState } from 'react';
 import { auth, provider, signInWithPopup, signOut } from "../firebaseConfig";
 
-const Login = ({ className, inputHeader, inputText}) => {
+const Login = ({ className }) => {
+
+  const [load, setload] = useState(false);
 
   const handleLogin = async () => {
+    setload(true);
     try {
-      await signInWithPopup(auth, provider);
+      console.log('Login with Google clicked');
+      const result = await signInWithPopup(auth, provider);
+      await saveUser(result.user);
     } catch (err) {
       console.error(err);
+    } finally{
+      setload(false);
     }
-  };
 
-  const handleLogout = async () => {
-    await signOut(auth);
+
   };
 
   return (
-    <Section>
-      <Header />
-        <div className='container lg:flex'>
-            <div className='max-w-[25rem]'>
-                <h2 className={`h2 mb-4 md:mb-8 ${className || ""}`}>Login Required.</h2>
-              </div>
-              <p className='body-2 mt-[6rem] -ml-[8.35rem] text-n-4 justify-items-start'>Click below to login with Google</p>
-</div>
-              <Button className='mt-[10rem] items-center justify-center' onClick={handleLogin}>Login with Google</Button>
-        
+    <Section className='pt-[12rem] -mt-[5.25rem]'>
+      <div className='container relative z-2'>
+        <div className='flex flex-col items-center justify-center min-h-[60vh] text-center'>
+          <div className='max-w-[30rem] mx-auto'>
+            <h2 className={`h2 mb-6 text-n-1 ${className || ""}`}>
+              Login Required
+            </h2>
+            <p className='body-1 mb-8 text-n-3 lg:mb-12'>
+              Please sign in with your Google account to access BrainWave events and register for competitions.
+            </p>
+            <Button 
+              className='w-full sm:w-auto px-8 py-4' 
+              onClick={handleLogin}
+              disabled={load}
+            >
+              Login with Google
+            </Button>
+          </div>
+        </div>
+      </div>
     </Section>
   )
 }
