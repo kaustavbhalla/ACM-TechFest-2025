@@ -1,9 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Section from './section';
 import Button from './button';
-import { saveUser } from "C:/Users/kaust/USICT/acmChallenge/utils/saveUser.js";
-import { useState } from 'react';
-import { auth, provider, signInWithPopup, signOut } from "../firebaseConfig";
 
 const Login = ({ className }) => {
 
@@ -12,16 +9,12 @@ const Login = ({ className }) => {
   const handleLogin = async () => {
     setload(true);
     try {
-      console.log('Login with Google clicked');
-      const result = await signInWithPopup(auth, provider);
-      await saveUser(result.user);
+      alert('Login functionality coming soon!');
     } catch (err) {
-      console.error(err);
+      console.error('Login error:', err);
     } finally{
       setload(false);
     }
-
-
   };
 
   return (

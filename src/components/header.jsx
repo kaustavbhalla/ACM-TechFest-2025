@@ -7,7 +7,6 @@ import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './design/Header';
 import ButtonGradient from '../assets/svg/ButtonGradient';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
-import Login from './login'
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -65,7 +64,8 @@ const Header = () => {
                 </Button>
 
                 <Button
-                    className='ml-auto lg:hidden' px='px-3'
+                    className='ml-auto lg:hidden'
+                    px='px-3'
                     onClick={toggleNav}
                 >
                     <MenuSvg openNavigation={openNav} />
