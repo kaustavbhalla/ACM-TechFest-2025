@@ -1,16 +1,115 @@
-# React + Vite
+# BrainWave 2025 - USICT ACM Student Chapter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for BrainWave 2025, the flagship tech event of USICT ACM Student Chapter. Built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Clean, responsive UI with smooth animations
+- **Event Showcase**: Display of flagship events including HackerSpace CTF, HackLLM, CompetitiveCoder, CVHack, CozmoClench, and MeshMerize
+- **Speaker Profiles**: Featured industry leaders including Jensen Huang (NVIDIA CEO) and Sundar Pichai (Alphabet CEO)
+- **Event Schedule**: Detailed timeline for the 24-hour live event (October 5-6, 2025)
+- **Responsive Layout**: Optimized for all devices and screen sizes
+- **Interactive Components**: Hover effects, gradient backgrounds, and smooth transitions
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 18 + Vite
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **Icons & Graphics**: Custom SVG components
+- **Build Tool**: Vite with HMR (Hot Module Replacement)
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/acmChallenge.git
+cd acmChallenge
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── design/         # Design-specific components
+│   ├── Benefits.jsx    # Event schedule section
+│   ├── Flagships.jsx   # Flagship events showcase
+│   ├── Header.jsx      # Navigation header
+│   ├── Hero.jsx        # Landing section
+│   ├── Login.jsx       # Authentication page
+│   └── Speakers.jsx    # Speaker profiles
+├── assets/             # Images, icons, and static files
+├── constants/          # Configuration and data
+└── App.jsx            # Main application component
+```
+
+## 🎯 Key Events
+
+- **HackerSpace 1.0**: Capture the Flag cybersecurity competition
+- **HackLLM**: 24-hour LLM hackathon
+- **CompetitiveCoder**: DSA and competitive programming contest
+- **CVHack**: Computer vision solutions challenge
+- **CozmoClench**: Manual robotics competition
+- **MeshMerize**: Autonomous maze-solving robotics
+
+## 🎨 Design Features
+
+- Custom gradient backgrounds and borders
+- Interactive hover effects
+- Responsive grid layouts
+- Modern typography with custom fonts
+- SVG-based icons and illustrations
+- Dark theme with accent colors
+
+## 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+- Desktop (1024px+)
+- Tablet (768px - 1023px)
+- Mobile (320px - 767px)
+
+## 🚀 Deployment
+
+Build the project for production:
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory, ready for deployment.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🎉 Event Details
+
+**Date**: October 5-6, 2025  
+**Duration**: 24 Hours  
+**Organizer**: USICT ACM Student Chapter  
+**Theme**: Technology, Innovation, and Creativity
+
+---
+
+Built with ❤️ by USICT ACM Student Chapter
