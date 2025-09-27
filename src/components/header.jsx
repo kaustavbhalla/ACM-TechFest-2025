@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { brainwave } from '../assets';
 import { navigation } from '../constants';
 import Button from  './button';
-import MenuSvg from '../assets/svg/Menusvg';
+import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './design/Header';
 import ButtonGradient from '../assets/svg/ButtonGradient';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
