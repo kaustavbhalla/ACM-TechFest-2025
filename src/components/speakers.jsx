@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './section'
-import Heading from './heading'
+import Heading from './Heading'
 import { check, service1, service2, service3, smallSphere, stars } from '../assets'
 import { brainwaveServices, brainwaveServicesIcons } from '../constants'
 
