@@ -112,4 +112,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Built with ❤️ by USICT ACM Student Chapter
+Built with ❤️ by Kaustav Bhalla
