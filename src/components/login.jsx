@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Section from './section';
-import Button from './button';
+import Button from './Button';
+import { auth, provider, signInWithPopup, } from "../firebaseConfig";
+import { saveUser } from "C:/Users/kaust/USICT/acmChallenge/utils/saveUser.js";
 
 const Login = ({ className }) => {
 
@@ -9,7 +11,8 @@ const Login = ({ className }) => {
   const handleLogin = async () => {
     setload(true);
     try {
-      alert('Login functionality coming soon!');
+      const result = await signInWithPopup(auth, provider);
+      await saveUser(result.user);
     } catch (err) {
       console.error('Login error:', err);
     } finally{

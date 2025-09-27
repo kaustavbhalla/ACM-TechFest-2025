@@ -6,7 +6,7 @@ import { brainwaveServices, brainwaveServicesIcons } from '../constants'
 
 const Speakers = () => {
   return (
-    <Section id='Speakers'>
+    <Section id='Speakers' crosses>
         <div className='container'>
             <Heading title='Here are our speakers for BrainWave 2025' text="Get ready to learn from industry leaders and mentors, and build something exciting."/>
 
@@ -67,8 +67,8 @@ const Speakers = () => {
             </div>
         </div>
 
-        <Section className='overflow-hidden'>
-            <div className='container relative z-2'>
+
+            <div className='container relative z-2 mt-[3rem] -mb-[9rem]'>
                 <div className='hidden relative mb-8 justify-center lg:flex'>
                     <img src={smallSphere} className='relative z-1' width={255} height={255} />
                     <div className='absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none'>
@@ -78,7 +78,6 @@ const Speakers = () => {
                 <Heading 
                 tag="Compete and upskill at BrainWave 2025"/>
             </div>
-        </Section>
     </Section>
 
   )

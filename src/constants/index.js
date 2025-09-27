@@ -17,6 +17,10 @@ import {
   plusSquare,
   recording01,
   recording03,
+  roadmap1,
+  roadmap2,
+  roadmap3,
+  roadmap4,
   searchMd,
   sliders04,
   yourlogo,
@@ -238,3 +242,40 @@ export const collabApps = [
     height: 32,
   },
 ];
+
+export const roadmap = [
+  {
+    id: "0",
+    title: "Recognitions",
+    text: "This is a globally recognised event. Tap into recognitions which could lead you to cracked places.",
+    date: "May 2025",
+    status: "done",
+    imageUrl: roadmap1,
+    colorful: true,
+  },
+  {
+    id: "1",
+    title: "Gamification",
+    text: "The entire event is gamified. Leaderboards properly maintained. Get ready for 24 hours of exhilariting competitiveness.",
+    date: "May 2025",
+    status: "progress",
+    imageUrl: roadmap2,
+  },
+  {
+    id: "2",
+    title: "Real World Skills",
+    text: "Gain real world skills which can help take you further in life. These 24 hours can change your life.",
+    date: "May 2025",
+    status: "done",
+    imageUrl: roadmap3,
+  },
+  {
+    id: "3",
+    title: "Insane Networking",
+    text: "Make connections that matter. Network with industry experts, peers, and potential employers to expand your professional circle.",
+    date: "May 2025",
+    status: "progress",
+    imageUrl: roadmap4,
+  },
+];
+
