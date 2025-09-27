@@ -1,3 +1,4 @@
+
 import {
   benefitIcon1,
   benefitIcon2,
@@ -6,33 +7,18 @@ import {
   benefitImage2,
   chromecast,
   disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
   file02,
+  figma,
   framer,
   homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
-  notion,
-  photoshop,
   plusSquare,
-  protopie,
-  raindrop,
   recording01,
   recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
   searchMd,
-  slack,
   sliders04,
-  telegram,
-  twitter,
   yourlogo,
   card1,
   card2,
@@ -40,15 +26,26 @@ import {
   card4,
   card5,
   card6,
+  apple,
+  google,
+  meta,
+  microsoft,
+  nvidia,
+  reactPng,
+  tensorFlow,
+  electron,
+  embeddedc,
+  javascript,
+  gitlab
 } from "../assets";
 
 
 export const navigation = [
-    {
-        id: "0",
-        title: "Home",
-        url: "#Home"
-    },
+    // {
+    //     id: "0",
+    //     title: "Home",
+    //     url: "#Home"
+    // },
 
     {
         id: "1",
@@ -59,7 +56,7 @@ export const navigation = [
     {
         id: "2",
         title: "Events And Schedules",
-        url: "#Events"
+        url: "#Flagships"
     },
 
     {
@@ -93,7 +90,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [apple, google, meta, microsoft, nvidia];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -160,5 +157,84 @@ export const flagship = [
     backgroundUrl: card6,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+  },
+];
+
+export const collabText = "The fun begins on the 5th of October 2025. All events commence with an opening ceremony, by our speakers. This is a 24 Hour Live event.";
+
+export const collabContent = [
+  {
+    id: "0",
+    title: "5th October 2025",
+    text: collabText,
+  },
+  {
+    id: "1",
+    title: "Building Period",
+    text: "Over the next 24 hours, participants will ideate, design, and build their projects. Mentors will be available to provide guidance and support throughout the event.",
+  },
+  {
+    id: "2",
+    title: "6th October 2025",
+    text: "The event concludes with a closing ceremony, where winners will be announced and prizes awarded. All participants will receive a certificate of participation.",
+  },
+];
+
+export const collabApps = [
+  {
+    id: "0",
+    title: "Figma",
+    icon: figma,
+    width: 26,
+    height: 36,
+  },
+  {
+    id: "1",
+    title: "Framer",
+    icon: framer,
+    width: 34,
+    height: 36,
+  },
+  {
+    id: "2",
+    title: "React",
+    icon: reactPng,
+    width: 36,
+    height: 28,
+  },
+  {
+    id: "3",
+    title: "TensorFlow",
+    icon: tensorFlow,
+    width: 34,
+    height: 35,
+  },
+  {
+    id: "4",
+    title: "Electron",
+    icon: electron,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "5",
+    title: "Embedded C",
+    icon: embeddedc,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "6",
+    title: "JavaScript",
+    icon: javascript,
+    width: 26,
+    height: 34,
+  },
+  {
+    id: "7",
+    title: "GitLab",
+    icon: gitlab,
+    width: 38,
+    height: 32,
   },
 ];

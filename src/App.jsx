@@ -2,6 +2,8 @@ import React from 'react'
 import Header from './components/header'
 import Hero from './components/Hero';
 import Flagships from './components/Flagships';
+import Benefits from './components/Benefits';
+import Login from './components/login';
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
         <Header />
         <Hero />
         <Flagships />
+        <Benefits />
+        {/* <Login /> */}
       </div>
     </>
   )

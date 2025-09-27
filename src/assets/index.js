@@ -27,14 +27,15 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
-import discord from "./collaboration/discord.png";
 import figma from "./collaboration/figma.png";
 import framer from "./collaboration/framer.png";
-import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
-import slack from "./collaboration/slack.png";
+
+import reactPng from "./collaboration/React.png";
+import tensorFlow from "./collaboration/TensorFlow.png";
+import electron from "./collaboration/Electron.png";
+import embeddedc from "./collaboration/Embedded C.png";
+import javascript from "./collaboration/JavaScript.png";
+import gitlab from "./collaboration/GitLab.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -82,6 +83,12 @@ import card4 from "./benefits/card-4.svg?url";
 import card5 from "./benefits/card-5.svg?url";
 import card6 from "./benefits/card-6.svg?url";
 
+import apple from "./Apple_logo_white.svg";
+import google from "./google-icon-logo-svgrepo-com.svg";
+import meta from "./meta.svg";
+import microsoft from "./microsoft-logo-svgrepo-com.svg";
+import nvidia from "./nvidia.svg";
+
 export {
   card1,
   card2,
@@ -116,14 +123,8 @@ export {
   heroBackground,
   curve1,
   curve2,
-  discord,
   figma,
   framer,
-  notion,
-  photoshop,
-  protopie,
-  raindrop,
-  slack,
   service1,
   service2,
   service3,
@@ -157,4 +158,15 @@ export {
   instagram,
   telegram,
   twitter,
+  apple,
+  google,
+  meta,
+  microsoft,
+  nvidia,
+  reactPng,
+  tensorFlow,
+  electron,
+  embeddedc,
+  javascript,
+  gitlab
 };
