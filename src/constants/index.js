@@ -93,9 +93,9 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [apple, google, meta, microsoft, nvidia];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Expansion of AI",
+  "GPU's and what it takes to build them",
+  "Emerging market trends in semiconductors",
 ];
 
 export const brainwaveServicesIcons = [

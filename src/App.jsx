@@ -5,6 +5,7 @@ import Flagships from './components/Flagships';
 import Benefits from './components/Benefits';
 import Login from './components/login';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Speakers from './components/speakers';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
                 <Hero />
                 <Flagships />
                 <Benefits />
+                <Speakers />
               </>
             }
           />
