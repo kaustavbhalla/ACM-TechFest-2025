@@ -45,22 +45,17 @@ import {
 
 
 export const navigation = [
-    // {
-    //     id: "0",
-    //     title: "Home",
-    //     url: "#Home"
-    // },
 
     {
         id: "1",
         title: "About",
-        url: "#About"
+        url: "#hero"
     },
 
     {
         id: "2",
         title: "Events And Schedules",
-        url: "#Flagships"
+        url: "#benefits"
     },
 
     {
@@ -72,7 +67,7 @@ export const navigation = [
     {
         id: "4",
         title: "Contact Us",
-        url: "#Contact"
+        url: "#Roadmap"
     },    
     
     {
